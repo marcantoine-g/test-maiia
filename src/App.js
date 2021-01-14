@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Item from "./components/Item/Item";
+import ListItems from "./components/ListItems/ListItems";
 
 function App() {
   return (
@@ -8,8 +8,9 @@ function App() {
       <header>
         <h1>Test technique Maiia</h1>
       </header>
-      <section className="homePage">{/* <ListItems /> */}</section>
-      <Item title="test" srcImg="test" />
+      <section className="homePage">
+        <ListItems />
+      </section>
     </div>
   );
 }
