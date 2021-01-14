@@ -15,8 +15,7 @@ export const ListItemsSlice = createSlice({
   name: "listItems",
   initialState: {
     photos: [],
-    status: "hey",
-    currentPage: 1,
+    status: "",
   },
   reducers: {
     setCurrentPage: (state, action) => {
