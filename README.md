@@ -9,10 +9,11 @@ npm install
 npm start
 ```
 
-#### Technos utilisées
+### Technos utilisées
 
-  - ReactJS
-  - Redux
+- ReactJS
+- Redux
 
 ### Description
-This text you see here is *actually* written in Markdown!
+
+This text you see here is _actually_ written in Markdown!
