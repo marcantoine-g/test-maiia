@@ -1,0 +1,12 @@
+.App {
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  color: #ffffff;
+  background-color: #55b9c6;
+}
