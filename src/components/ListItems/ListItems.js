@@ -1,10 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ListItems.css";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  getAllItems,
-  fetchItems,
-} from "../../features/ListItemsSlice/ListItemsSlice";
+import { getAllItems, fetchItems } from "../../features/ListItemsSlice";
 import Item from "../Item/Item";
 
 function ListItems(props) {

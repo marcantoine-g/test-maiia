@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import ListItems from "./components/ListItems/ListItems";
 import { useSelector, useDispatch } from "react-redux";
-import { ListItemsSlice } from "./features/ListItemsSlice/ListItemsSlice";
+import { ListItemsSlice } from "./features/ListItemsSlice";
 
 function App() {
   const dispatch = useDispatch();
