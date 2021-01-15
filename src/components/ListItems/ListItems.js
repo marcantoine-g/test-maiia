@@ -1,14 +1,18 @@
 import React, { useState, useEffect } from "react";
 import "./ListItems.css";
 import { useSelector, useDispatch } from "react-redux";
-import { getAllItems, fetchItems } from "../../features/ListItemsSlice";
+import {
+  getAllItems,
+  fetchItems,
+  getCurrentPage,
+} from "../../features/ListItemsSlice";
 import Item from "../Item/Item";
 
 function ListItems(props) {
-  const { currentPage } = props;
   const dispatch = useDispatch();
   const photos = useSelector(getAllItems);
   const status = useSelector((state) => state.ListItems.status);
+  const currentPage = useSelector(getCurrentPage);
   const [ListItemsGroup, setListItemsGroup] = useState([]);
 
   useEffect(() => {

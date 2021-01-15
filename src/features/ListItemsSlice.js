@@ -43,5 +43,6 @@ export const ListItemsSlice = createSlice({
 });
 
 export const getAllItems = (state) => state.ListItems.photos;
+export const getCurrentPage = (state) => state.ListItems.currentPage;
 
 export default ListItemsSlice.reducer;
