@@ -14,17 +14,31 @@
     margin: 10px;
     margin-bottom: 0;
   }
-  .addButton {
+  .addButton,
+  .removeButton {
     position: absolute;
-    background-color: white;
-    background-image: url("../../assets/icon_add_basket.svg");
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
     border: none;
     cursor: pointer;
     right: 50px;
     top: -15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+  .addButton {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../../assets/icon_add_basket.svg");
+  }
+
+  .removeButton {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../../assets/icon_remove.svg");
+  }
+
   .bar {
     width: 90%;
     height: 2px;

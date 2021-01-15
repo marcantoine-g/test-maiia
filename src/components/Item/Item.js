@@ -14,10 +14,11 @@ function Item(props) {
       {inCart ? (
         <button
           className="removeButton"
-          onClick={() => dispatch(cartSlice.actions.removeProduct({ id }))}
-        >
-          remove
-        </button>
+          onClick={() => {
+            dispatch(cartSlice.actions.removeProduct({ id }));
+            console.log("ici");
+          }}
+        ></button>
       ) : (
         <button
           className="addButton"

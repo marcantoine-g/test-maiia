@@ -1,0 +1,38 @@
+@media (min-width: 410px) {
+  .opaque {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.384);
+  }
+
+  .cartPanel {
+    max-height: 85vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 80px;
+    right: 50px;
+    width: 80%;
+    box-shadow: rgb(221, 220, 220) 1px 1px 2px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .cartPanel:focus {
+    background-color: blue;
+  }
+  .cart h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .cart p {
+    text-align: center;
+  }
+  .nbProduit {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}

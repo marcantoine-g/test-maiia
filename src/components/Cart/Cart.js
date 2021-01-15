@@ -21,10 +21,12 @@ function Cart() {
     );
   });
   return (
-    <div className="cart">
+    <div className="cartPanel">
       <h3>Panier</h3>
       {listProduct}
-      <p>Nombre de produit : {nbProduit}</p>
+      <p>
+        Nombre de produit : <span className="nbProduit">{nbProduit}</span>
+      </p>
     </div>
   );
 }
