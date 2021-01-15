@@ -1,0 +1,22 @@
+@media (min-width: 410px) {
+  .listItems {
+    margin: 20px;
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: rgb(221, 220, 220) 1px 1px 2px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .listItems h3 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .allItems {
+    display: flex;
+    flex-direction: column;
+  }
+  .allItems p {
+    text-align: center;
+  }
+}

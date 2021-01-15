@@ -13,19 +13,20 @@ function Item(props) {
       <p className="itemTitle">{title}</p>
       {inCart ? (
         <button
+          className="removeButton"
           onClick={() => dispatch(cartSlice.actions.removeProduct({ id }))}
         >
           remove
         </button>
       ) : (
         <button
+          className="addButton"
           onClick={() =>
             dispatch(cartSlice.actions.addProduct({ id, title, srcImg }))
           }
-        >
-          add
-        </button>
+        ></button>
       )}
+      <div className="bar"></div>
     </div>
   );
 }

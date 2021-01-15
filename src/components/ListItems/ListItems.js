@@ -33,14 +33,16 @@ function ListItems(props) {
 
   return (
     <div className="listItems">
-      <h3>Liste des photos</h3>
-      {ListItemsGroup.length !== 0 ? (
-        ListItemsGroup.map((item) => {
-          return <div key={item.props.id}>{item}</div>;
-        })
-      ) : (
-        <p>Le tableau est vide</p>
-      )}
+      <h3>Liste des produits</h3>
+      <div className="allItems">
+        {ListItemsGroup.length !== 0 ? (
+          ListItemsGroup.map((item) => {
+            return <div key={item.props.id}>{item}</div>;
+          })
+        ) : (
+          <p>Le tableau est vide</p>
+        )}
+      </div>
     </div>
   );
 }
