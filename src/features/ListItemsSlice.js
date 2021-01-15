@@ -10,6 +10,16 @@ export const fetchItems = createAsyncThunk(
     return responseJSON;
   }
 );
+export const fetchItemByTitle = createAsyncThunk(
+  "listItems/fetchItemByTitle",
+  async (title) => {
+    const response = await fetch(
+      `https://jsonplaceholder.typicode.com/photos?q=${title}&_limit=15`
+    );
+    const responseJSON = await response.json();
+    return responseJSON;
+  }
+);
 
 export const ListItemsSlice = createSlice({
   name: "listItems",
@@ -37,6 +47,16 @@ export const ListItemsSlice = createSlice({
       state.photos = action.payload;
     },
     [fetchItems.rejected]: (state, action) => {
+      state.status = "failed";
+    },
+    [fetchItemByTitle.pending]: (state, action) => {
+      state.status = "loading";
+    },
+    [fetchItemByTitle.fulfilled]: (state, action) => {
+      state.status = "fulfilled";
+      state.photos = action.payload;
+    },
+    [fetchItemByTitle.rejected]: (state, action) => {
       state.status = "failed";
     },
   },
