@@ -24,4 +24,4 @@ npm start
 - Le design évidement (pris par le temps)
 - La modal qui se ferme si on click à l'extérieur
 - Mettre des animations (notamment quand l'utiliseur execute des actions)
-- Faire des test et afficher les erreurs si ont n'obtiens pas de résultats sur la méthode fetch
+- Faire des tests et afficher les erreurs si on n'obtient pas de résultats sur la méthode fetch
