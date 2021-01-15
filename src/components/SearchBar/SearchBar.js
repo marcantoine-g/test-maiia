@@ -16,20 +16,24 @@ function SearchBar() {
 
   return (
     <div className="searchBar">
-      <h3>Vous cherchez un produit ? Tapez son titre</h3>
-      <input
-        id="inputSearch"
-        type="text"
-        placeholder="Titre du produit"
-        onChange={(e) => changeInputValue(e)}
-      />
-      <button
-        type="submit"
-        value={inputValue}
-        onClick={(e) => searchProduct(e)}
-      >
-        OK
-      </button>
+      <div className="titles">
+        <h3>Vous cherchez un produit ?</h3>
+        <h4>Tapez son titre</h4>
+      </div>
+
+      <div className="inputSection">
+        <input
+          id="inputSearch"
+          type="text"
+          onChange={(e) => changeInputValue(e)}
+          placeholder="Titre du produit"
+        />
+        <button
+          type="submit"
+          value={inputValue}
+          onClick={(e) => searchProduct(e)}
+        ></button>
+      </div>
     </div>
   );
 }
