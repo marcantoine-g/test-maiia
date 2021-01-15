@@ -27,12 +27,30 @@
     text-align: center;
     margin-bottom: 50px;
   }
-
+  .cartPanel > p {
+    margin-bottom: 50px;
+  }
   .cart p {
     text-align: center;
   }
   .nbProduit {
     font-weight: bold;
     font-size: 1.2em;
+  }
+}
+
+@media (min-width: 780px) {
+  .cart h3 {
+    font-size: 2em;
+  }
+  .cart p {
+    font-size: 1.5em;
+  }
+  .cartPanel {
+    max-width: 80%;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }

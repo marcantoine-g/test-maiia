@@ -52,3 +52,24 @@
     margin-bottom: 5px;
   }
 }
+
+@media (min-width: 780px) {
+  .searchBar h3,
+  .searchBar h4 {
+    font-size: 2em;
+  }
+
+  .inputSection {
+    width: 60%;
+    justify-content: center;
+  }
+  .inputSection input {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1270px) {
+  .inputSection input::placeholder {
+    font-size: 1em;
+  }
+}

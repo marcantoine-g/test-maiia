@@ -25,7 +25,7 @@
   .cartButton {
     z-index: 10;
     top: 50px;
-    right: 20px;
+    right: 5%;
     position: fixed;
     width: 70px;
     height: 70px;
@@ -58,11 +58,17 @@
     background-color: red;
     position: fixed;
     top: 100px;
-    right: 20px;
+    right: 5%;
     border-radius: 20px;
   }
 
   .disable {
     display: none;
+  }
+}
+
+@media (min-width: 780px) {
+  header h1 {
+    font-size: 3em;
   }
 }

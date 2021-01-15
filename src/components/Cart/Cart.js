@@ -23,10 +23,10 @@ function Cart() {
   return (
     <div className="cartPanel">
       <h3>Panier</h3>
-      {listProduct}
       <p>
         Nombre de produit : <span className="nbProduit">{nbProduit}</span>
       </p>
+      <div className="allItems">{listProduct}</div>
     </div>
   );
 }

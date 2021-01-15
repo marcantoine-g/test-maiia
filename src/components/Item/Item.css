@@ -46,3 +46,9 @@
     margin: 50px auto;
   }
 }
+
+@media (min-width: 780px) {
+  .item {
+    max-width: 500px;
+  }
+}
