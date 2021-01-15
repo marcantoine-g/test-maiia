@@ -1,15 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Cart.css";
-import { useSelector, useDispatch } from "react-redux";
-import {
-  cartSlice,
-  getNbProduct,
-  getAllProduct,
-} from "../../features/CartSlice";
+import { useSelector } from "react-redux";
+import { getNbProduct, getAllProduct } from "../../features/CartSlice";
 import Item from "../Item/Item";
 
-function Cart(props) {
-  const dispatch = useDispatch();
+function Cart() {
   const nbProduit = useSelector(getNbProduct);
   const allProduct = useSelector(getAllProduct);
   let listProduct = [];
