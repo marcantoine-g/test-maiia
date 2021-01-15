@@ -16,10 +16,16 @@ export const ListItemsSlice = createSlice({
   initialState: {
     photos: [],
     status: "",
+    currentPage: 1,
   },
   reducers: {
-    setCurrentPage: (state, action) => {
-      state.currentPage = action.payload;
+    incrementPage: (state, action) => {
+      state.currentPage += 1;
+    },
+    decrementPage: (state, action) => {
+      if (state.currentPage > 1) {
+        state.currentPage -= 1;
+      }
     },
   },
   extraReducers: {

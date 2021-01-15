@@ -1,18 +1,21 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
 import ListItems from "./components/ListItems/ListItems";
+import { useSelector, useDispatch } from "react-redux";
+import { ListItemsSlice } from "./features/ListItemsSlice/ListItemsSlice";
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(1);
+  const dispatch = useDispatch();
+  const currentPage = useSelector((state) => state.ListItems.currentPage);
 
   const changePage = (buttonChangeSide) => {
     if (buttonChangeSide === "prev") {
       if (currentPage !== 1) {
-        setCurrentPage(currentPage - 1);
+        dispatch(ListItemsSlice.actions.decrementPage());
       }
     }
     if (buttonChangeSide === "next") {
-      setCurrentPage(currentPage + 1);
+      dispatch(ListItemsSlice.actions.incrementPage());
     }
   };
 
