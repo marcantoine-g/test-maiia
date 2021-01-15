@@ -3,6 +3,7 @@ import "./App.css";
 import ListItems from "./components/ListItems/ListItems";
 import { useSelector, useDispatch } from "react-redux";
 import { ListItemsSlice } from "./features/ListItemsSlice";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   const dispatch = useDispatch();
@@ -46,6 +47,9 @@ function App() {
             <span>NEXT</span>
           </button>
         </div>
+      </section>
+      <section className="cart">
+        <Cart />
       </section>
     </div>
   );
